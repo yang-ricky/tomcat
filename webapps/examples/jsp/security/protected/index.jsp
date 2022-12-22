@@ -15,6 +15,8 @@
   limitations under the License.
 --%>
 <%@ page import="java.util.Enumeration" %>
+<%@ page import="java.security.Principal" %>
+<%@ page import="org.apache.catalina.TomcatPrincipal" %>
 <%
   if (request.getParameter("logoff") != null) {
     session.invalidate();
@@ -73,6 +75,52 @@ enter it here:
 </form>
 <br><br>
 
+<%
+  Principal p = request.getUserPrincipal();
+  if (!(p instanceof TomcatPrincipal)) {
+%>
+<p>The principal does not support attributes.</p>
+<%
+  } else {
+    TomcatPrincipal principal = (TomcatPrincipal) p;
+%>
+<p>The principal contains the following attributes:</p>
+<table>
+<tr><th>Name</th><th>Value</th><th>Type</th></tr>
+<%
+    Enumeration<String> names = principal.getAttributeNames();
+    while (names.hasMoreElements()) {
+      String name = names.nextElement();
+      Object value = principal.getAttribute(name);
+      String type = value != null ? value.getClass().getName() : "unknown";
+      if (value instanceof Object[]) {
+        Object[] values = (Object[]) value;
+        value = "";
+        for (int i = 0; i < values.length; i++) {
+          value += values[i] + "<br/>";
+        }
+        if (values.length > 0) {
+          type = values[0].getClass().getName() + "[]";
+        } else {
+          type = "unknown";
+        }
+      }
+      type = type.replaceFirst("^java\\.lang\\.", "");
+%>
+<tr>
+  <td><%= util.HTMLFilter.filter(name) %></td>
+  <td><%= util.HTMLFilter.filter(String.valueOf(value)) %></td>
+  <td><%= util.HTMLFilter.filter(type) %></td>
+</tr>
+<%
+    }
+%>
+</table>
+<%
+  }
+%>
+<br><br>
+
 To add some data to the authenticated session, enter it here:
 <form method="GET" action='<%= response.encodeURL("index.jsp") %>'>
 <input type="text" name="dataName">
@@ -95,7 +143,10 @@ To add some data to the authenticated session, enter it here:
   while (names.hasMoreElements()) {
     String name = names.nextElement();
 %>
-<tr><td><%= name %></td><td><%= session.getAttribute(name) %></td>
+<tr>
+  <td><%= util.HTMLFilter.filter(name) %></td>
+  <td><%= util.HTMLFilter.filter(String.valueOf(session.getAttribute(name))) %></td>
+</tr>
 <%
   }
 %>

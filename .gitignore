@@ -23,6 +23,7 @@ output
 work
 build.properties
 mvn.properties
+target
 .ant-targets-build.xml
 .checkstyle
 .classpath

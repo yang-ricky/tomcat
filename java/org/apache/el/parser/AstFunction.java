@@ -92,7 +92,7 @@ public final class AstFunction extends SimpleNode {
         Method m = fnMapper.resolveFunction(this.prefix, this.localName);
 
         if (m == null && this.prefix.length() == 0) {
-            // TODO: Do we need to think about precedence of the various ways
+            // TOMCATTODO: Do we need to think about precedence of the various ways
             //       a lambda expression may be obtained from something that
             //       the parser thinks is a function?
             Object obj = null;

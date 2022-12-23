@@ -31,7 +31,7 @@ public class PoolPurgeTest extends DefaultTestCase {
 
     @Override
     public org.apache.tomcat.jdbc.pool.DataSource createDefaultDataSource() {
-        // TODO Auto-generated method stub
+        // TOMCATTODO Auto-generated method stub
         org.apache.tomcat.jdbc.pool.DataSource ds = super.createDefaultDataSource();
         ds.getPoolProperties().setDriverClassName(Driver.class.getName());
         ds.getPoolProperties().setUrl(Driver.url);

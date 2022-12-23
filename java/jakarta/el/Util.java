@@ -507,7 +507,7 @@ class Util {
      * making changes keep the code in sync.
      */
     private static boolean isCoercibleFrom(Object src, Class<?> target) {
-        // TODO: This isn't pretty but it works. Significant refactoring would
+        // TOMCATTODO: This isn't pretty but it works. Significant refactoring would
         //       be required to avoid the exception.
         try {
             getExpressionFactory().coerceToType(src, target);

@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * Extends {@link AjpMessage} to provide additional methods for reading from the
  * message.
- * TODO: See if it makes sense for any/all of these methods to be transferred to
+ * TOMCATTODO: See if it makes sense for any/all of these methods to be transferred to
  *       AjpMessage
  */
 public class TesterAjpMessage extends AjpMessage {

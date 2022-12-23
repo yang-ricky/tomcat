@@ -954,13 +954,13 @@ class NoBodyOutputStream extends ServletOutputStream {
 
     @Override
     public boolean isReady() {
-        // TODO SERVLET 3.1
+        // TOMCATTODO SERVLET 3.1
         return false;
     }
 
     @Override
     public void setWriteListener(jakarta.servlet.WriteListener listener) {
-        // TODO SERVLET 3.1
+        // TOMCATTODO SERVLET 3.1
     }
 
     private void checkCommit() throws IOException {

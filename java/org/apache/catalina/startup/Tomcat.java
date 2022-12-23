@@ -79,11 +79,11 @@ import org.apache.tomcat.util.file.ConfigurationSource;
 import org.apache.tomcat.util.modeler.Registry;
 import org.apache.tomcat.util.res.StringManager;
 
-// TODO: lazy init for the temp dir - only when a JSP is compiled or
+// TOMCATTODO: lazy init for the temp dir - only when a JSP is compiled or
 // get temp dir is called we need to create it. This will avoid the
 // need for the baseDir
 
-// TODO: allow contexts without a base dir - i.e.
+// TOMCATTODO: allow contexts without a base dir - i.e.
 // only programmatic. This would disable the default servlet.
 
 /**
@@ -201,7 +201,7 @@ public class Tomcat {
      * The user should ensure that the file permissions for the base directory
      * are appropriate.
      * <p>
-     * TODO: disable work dir if not needed ( no jsp, etc ).
+     * TOMCATTODO: disable work dir if not needed ( no jsp, etc ).
      *
      * @param basedir The Tomcat base folder on which all others will be derived
      */
@@ -336,7 +336,7 @@ public class Tomcat {
      * your configuration.
      *
      * <p>
-     * TODO: add the rest
+     * TOMCATTODO: add the rest
      *
      * @param contextPath The context mapping to use, "" for root context.
      * @param docBase Base directory for the context, for static files.
@@ -1079,7 +1079,7 @@ public class Tomcat {
      * <li>MIME mappings (subset of those in conf/web.xml)</li>
      * <li>Welcome files</li>
      * </ul>
-     * TODO: Align the MIME mappings with conf/web.xml - possibly via a common
+     * TOMCATTODO: Align the MIME mappings with conf/web.xml - possibly via a common
      *       file.
      *
      * @param contextPath   The path of the context to set the defaults for

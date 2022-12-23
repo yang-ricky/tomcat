@@ -96,7 +96,7 @@ public class Bug51582 {
                 try {
                     t.join();
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
+                    // TOMCATTODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }

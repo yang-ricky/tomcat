@@ -109,7 +109,7 @@ public class SessionUtils {
             }
 
             // Tapestry 3.0: Engine stored in session under "org.apache.tapestry.engine:" + config.getServletName()
-            // TODO: Tapestry 4+
+            // TOMCATTODO: Tapestry 4+
             final List<Object> tapestryArray = new ArrayList<>();
             for (Enumeration<String> enumeration = in_session.getAttributeNames(); enumeration.hasMoreElements();) {
                 String name = enumeration.nextElement();

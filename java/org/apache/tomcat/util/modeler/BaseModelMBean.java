@@ -67,7 +67,7 @@ import org.apache.tomcat.util.res.StringManager;
  *  We can add getter cache if needed.
  *  - removed unused constructor, fields
  *
- *  TODO:
+ *  TOMCATTODO:
  *   - clean up catalina.mbeans, stop using weird inheritance
  */
 
@@ -130,7 +130,7 @@ public class BaseModelMBean implements DynamicMBean, MBeanRegistration,
     protected Object resource = null;
 
     // --------------------------------------------------- DynamicMBean Methods
-    // TODO: move to ManagedBean
+    // TOMCATTODO: move to ManagedBean
     static final Object[] NO_ARGS_PARAM = new Object[0];
 
     protected String resourceType = null;

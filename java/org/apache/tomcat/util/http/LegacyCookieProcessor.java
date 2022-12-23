@@ -216,7 +216,7 @@ public final class LegacyCookieProcessor extends CookieProcessorBase {
             if (cookieValue != null && !cookieValue.isNull() ) {
                 if (cookieValue.getType() != MessageBytes.T_BYTES ) {
                     Exception e = new Exception();
-                    // TODO: Review this in light of HTTP/2
+                    // TOMCATTODO: Review this in light of HTTP/2
                     log.debug("Cookies: Parsing cookie as String. Expected bytes.", e);
                     cookieValue.toBytes();
                 }

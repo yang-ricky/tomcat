@@ -218,7 +218,7 @@ public class LoadBalancerDrainingValve extends ValveBase {
             }
 
             // Kill any session cookie that was found
-            // TODO: Consider implications of SSO cookies
+            // TOMCATTODO: Consider implications of SSO cookies
             if (null != sessionCookie) {
                 sessionCookie.setPath(SessionConfig.getSessionCookiePath(request.getContext()));
                 sessionCookie.setMaxAge(0); // Delete

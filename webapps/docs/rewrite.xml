@@ -506,7 +506,7 @@ RewriteRule ^/(.*)$ ${uc:$1}
       <p>Some hints on the syntax of regular
       expressions:</p>
 
-<!-- TODO: Why is the following pre-formatted non-wrappable text? -->
+<!-- TOMCATTODO: Why is the following pre-formatted non-wrappable text? -->
 <pre>
 <strong>Text:</strong>
   <strong><code>.</code></strong>           Any single character

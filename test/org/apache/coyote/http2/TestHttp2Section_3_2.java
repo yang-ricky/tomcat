@@ -33,7 +33,7 @@ public class TestHttp2Section_3_2 extends Http2TestBase {
     // Note: Tests for zero/multiple HTTP2-Settings fields can be found below
     //       in the tests for section 3.2.1
 
-    // TODO: Test initial requests with bodies of various sizes
+    // TOMCATTODO: Test initial requests with bodies of various sizes
 
     @Test
     public void testConnectionNoHttp2Support() throws Exception {

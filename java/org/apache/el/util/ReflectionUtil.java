@@ -407,7 +407,7 @@ public class ReflectionUtil {
      * the code in sync.
      */
     private static boolean isCoercibleFrom(EvaluationContext ctx, Object src, Class<?> target) {
-        // TODO: This isn't pretty but it works. Significant refactoring would
+        // TOMCATTODO: This isn't pretty but it works. Significant refactoring would
         //       be required to avoid the exception.
         try {
             ELSupport.coerceToType(ctx, src, target);

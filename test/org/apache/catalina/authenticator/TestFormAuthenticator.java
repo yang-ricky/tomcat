@@ -439,7 +439,7 @@ public class TestFormAuthenticator extends TomcatBaseTest {
         protected static final int LOGIN_SUCCESSFUL = 3;
         private int requestCount = 0;
 
-        // todo: forgot this change and making it up again!
+        // TOMCATTODO: forgot this change and making it up again!
         protected final String SESSION_PARAMETER_START =
             SESSION_PARAMETER_NAME + "=";
 

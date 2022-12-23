@@ -1661,7 +1661,7 @@ public class JspC extends Task implements Options {
 
     protected void initServletContext(ClassLoader classLoader)
             throws IOException, JasperException {
-        // TODO: should we use the Ant Project's log?
+        // TOMCATTODO: should we use the Ant Project's log?
         PrintWriter log = new PrintWriter(System.out);
         URL resourceBase = new File(uriRoot).getCanonicalFile().toURI().toURL();
 

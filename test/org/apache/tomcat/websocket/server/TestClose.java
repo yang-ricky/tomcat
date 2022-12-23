@@ -137,7 +137,7 @@ public class TestClose extends WebSocketBaseTest {
         client.httpUpgrade(BaseEndpointConfig.PATH);
         client.forceCloseSocket();
 
-        // TODO: I'm not entirely sure when onError should be called
+        // TOMCATTODO: I'm not entirely sure when onError should be called
         awaitOnError(IOException.class);
         awaitOnClose(CloseCodes.CLOSED_ABNORMALLY);
     }

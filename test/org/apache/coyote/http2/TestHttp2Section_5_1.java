@@ -52,8 +52,8 @@ public class TestHttp2Section_5_1 extends Http2TestBase {
     }
 
 
-    // TODO: reserved local
-    // TODO: reserved remote
+    // TOMCATTODO: reserved local
+    // TOMCATTODO: reserved remote
 
 
     @Test
@@ -112,7 +112,7 @@ public class TestHttp2Section_5_1 extends Http2TestBase {
     }
 
 
-    // TODO: Invalid frames for each of the remaining states
+    // TOMCATTODO: Invalid frames for each of the remaining states
 
     // Section 5.1.1
 

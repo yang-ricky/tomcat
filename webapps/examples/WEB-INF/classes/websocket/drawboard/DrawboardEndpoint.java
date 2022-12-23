@@ -63,7 +63,7 @@ public final class DrawboardEndpoint extends Endpoint {
      * The player that is associated with this Endpoint and the current room.
      * Note that this variable is only accessed from the Room Thread.<br><br>
      *
-     * TODO: Currently, Tomcat uses an Endpoint instance once - however
+     * TOMCATTODO: Currently, Tomcat uses an Endpoint instance once - however
      * the java doc of endpoint says:
      * "Each instance of a websocket endpoint is guaranteed not to be called by
      * more than one thread at a time per active connection."
@@ -203,7 +203,7 @@ public final class DrawboardEndpoint extends Endpoint {
 
                                 // Don't ignore RuntimeExceptions thrown by
                                 // this method
-                                // TODO: Find a better solution than this variable
+                                // TOMCATTODO: Find a better solution than this variable
                                 dontSwallowException = true;
                                 if (player != null) {
                                     player.handleDrawMessage(msg, msgId);
@@ -214,10 +214,10 @@ public final class DrawboardEndpoint extends Endpoint {
                             }
                         } catch (ParseException e) {
                             // Client sent invalid data
-                            // Ignore, TODO: maybe close connection
+                            // Ignore, TOMCATTODO: maybe close connection
                         } catch (RuntimeException e) {
                             // Client sent invalid data.
-                            // Ignore, TODO: maybe close connection
+                            // Ignore, TOMCATTODO: maybe close connection
                             if (dontSwallowException) {
                                 throw e;
                             }

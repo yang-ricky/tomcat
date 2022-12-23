@@ -40,7 +40,7 @@ public class TesterWsClient {
         // Set read timeout in case of failure so test doesn't hang
         socket.setSoTimeout(2000);
         // Disable Nagle's algorithm to ensure packets sent immediately
-        // TODO: Hoping this causes writes to wait for a TCP ACK for TCP RST
+        // TOMCATTODO: Hoping this causes writes to wait for a TCP ACK for TCP RST
         // test cases but I'm not sure?
         socket.setTcpNoDelay(true);
     }

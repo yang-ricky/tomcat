@@ -285,7 +285,7 @@ public abstract class SocketWrapperBase<E> {
      * Note: Once this method has returned <code>false</code> it <b>MUST NOT</b>
      *       be called again until the pending write has completed and the
      *       callback has been fired.
-     *       TODO: Modify {@link #registerWriteInterest()} so the above
+     *       TOMCATTODO: Modify {@link #registerWriteInterest()} so the above
      *       restriction is enforced there rather than relying on the caller.
      *
      * @return <code>true</code> if no writes are pending and data can be

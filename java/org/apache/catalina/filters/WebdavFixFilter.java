@@ -42,7 +42,7 @@ import org.apache.tomcat.util.res.StringManager;
  * Generally each different version of the MS client has a different set of
  * problems.
  * <p>
- * TODO: Update this filter to recognise specific MS clients and apply the
+ * TOMCATTODO: Update this filter to recognise specific MS clients and apply the
  *       appropriate workarounds for that particular client
  * <p>
  * As a filter, this is configured in web.xml like any other Filter. You usually

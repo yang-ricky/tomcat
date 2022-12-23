@@ -485,7 +485,7 @@ class Stream extends AbstractNonZeroStream implements HeaderEmitter {
         }
 
         // Copy the contents of the Map to the MimeHeaders
-        // TODO: Is there benefit in refactoring this? Is MimeHeaders too
+        // TOMCATTODO: Is there benefit in refactoring this? Is MimeHeaders too
         //       heavyweight? Can we reduce the copy/conversions?
         for (Map.Entry<String, String> headerEntry : headerMap.entrySet()) {
             MessageBytes mb = mimeHeaders.addValue(headerEntry.getKey());

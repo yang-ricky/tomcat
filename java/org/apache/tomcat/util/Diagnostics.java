@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-// XXX TODO: Source code line length
-// XXX TODO: More JavaDoc
+// XXX TOMCATTODO: Source code line length
+// XXX TOMCATTODO: More JavaDoc
 // XXX Optional: Add support for com.sun.management specific mbean
 //               (http://docs.oracle.com/javase/7/docs/jre/api/management/extension/index.html)
 // XXX Optional: Wire additional public static methods implemented here

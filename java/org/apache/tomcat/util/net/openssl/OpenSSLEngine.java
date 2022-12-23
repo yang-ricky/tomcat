@@ -664,7 +664,7 @@ public final class OpenSSLEngine extends SSLEngine implements SSLUtil.ProtocolIn
         int pendingReadableBytesInSSL = SSL.pendingReadableBytesInSSL(ssl);
 
         // TLS 1.0 needs additional handling
-        // TODO Figure out why this is necessary and if a simpler / better
+        // TOMCATTODO Figure out why this is necessary and if a simpler / better
         // solution is available
         if (Constants.SSL_PROTO_TLSv1.equals(version) && lastPrimingReadResult == 0 &&
                 pendingReadableBytesInSSL == 0) {

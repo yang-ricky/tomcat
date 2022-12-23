@@ -1321,7 +1321,7 @@ public class PoolProperties implements PoolConfiguration, Cloneable, Serializabl
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        // TODO Auto-generated method stub
+        // TOMCATTODO Auto-generated method stub
         return super.clone();
     }
 

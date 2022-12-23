@@ -822,7 +822,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
                             // Explicitly negotiated the default protocol.
                             // Obtain a processor below.
                         } else {
-                            // TODO:
+                            // TOMCATTODO:
                             // OpenSSL 1.0.2's ALPN callback doesn't support
                             // failing the handshake with an error if no
                             // protocol can be negotiated. Therefore, we need to

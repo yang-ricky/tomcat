@@ -33,7 +33,7 @@ public class TestHttp2Section_4_1 extends Http2TestBase {
     private static final byte[] UNKNOWN_FRAME = new byte[] {
         0x00, 0x00, 0x00, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
-    // TODO: Tests for over-sized frames. Better located in tests for section 6?
+    // TOMCATTODO: Tests for over-sized frames. Better located in tests for section 6?
 
 
     @Test
@@ -47,7 +47,7 @@ public class TestHttp2Section_4_1 extends Http2TestBase {
     }
 
 
-    // TODO: Tests for unexpected flags. Better located in tests for section 6?
+    // TOMCATTODO: Tests for unexpected flags. Better located in tests for section 6?
 
 
     @Test

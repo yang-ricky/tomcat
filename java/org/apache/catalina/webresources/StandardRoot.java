@@ -361,7 +361,7 @@ public class StandardRoot extends LifecycleMBeanBase implements WebResourceRoot 
         return result;
     }
 
-    // TODO: Should the createWebResourceSet() methods be removed to some
+    // TOMCATTODO: Should the createWebResourceSet() methods be removed to some
     //       utility class for file system based resource sets?
 
     @Override

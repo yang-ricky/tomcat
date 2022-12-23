@@ -68,7 +68,7 @@ public class TestHttp2Section_6_9 extends Http2TestBase {
     }
 
 
-    // TODO: Test always accounting for changes in flow control windows even if
+    // TOMCATTODO: Test always accounting for changes in flow control windows even if
     //       the frame is in error.
 
 

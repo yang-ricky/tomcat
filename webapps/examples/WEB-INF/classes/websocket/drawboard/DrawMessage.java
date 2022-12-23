@@ -28,7 +28,7 @@ import java.awt.geom.Rectangle2D;
  * Note that we use primitive types instead of Point, Color etc.
  * to reduce object allocation.<br><br>
  *
- * TODO: But a Color objects needs to be created anyway for drawing this
+ * TOMCATTODO: But a Color objects needs to be created anyway for drawing this
  * onto a Graphics2D object, so this probably does not save much.
  */
 public final class DrawMessage {
@@ -160,7 +160,7 @@ public final class DrawMessage {
                 y2 = this.y1;
             }
 
-            // TODO: If (x1 == x2 || y1 == y2) draw as line.
+            // TOMCATTODO: If (x1 == x2 || y1 == y2) draw as line.
 
             if (type == 3) {
                 // Draw a rectangle.

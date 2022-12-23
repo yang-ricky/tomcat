@@ -26,7 +26,7 @@ import org.apache.tomcat.jni.SSL;
 /**
  * Implementation of SSLSupport for APR.
  * <p>
- * TODO: Add a mechanism (or figure out how to use what we already have) to
+ * TOMCATTODO: Add a mechanism (or figure out how to use what we already have) to
  *       invalidate the session.
  *
  * @deprecated  The APR/Native Connector will be removed in Tomcat 10.1.x

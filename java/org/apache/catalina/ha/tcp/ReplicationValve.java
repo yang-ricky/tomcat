@@ -569,7 +569,7 @@ public class ReplicationValve
      * @param clusterTime Cluster time
      */
     protected  void updateStats(long requestTime, long clusterTime) {
-        // TODO: Async requests may trigger multiple replication requests. How,
+        // TOMCATTODO: Async requests may trigger multiple replication requests. How,
         //       if at all, should the stats handle this?
         long currentTime = System.currentTimeMillis();
         lastSendTime = currentTime;

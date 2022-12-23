@@ -38,7 +38,7 @@ import java.nio.charset.StandardCharsets;
  * to be able to parse the request without converting to string.
  */
 
-// TODO: This class could either extend ByteBuffer, or better a ByteBuffer
+// TOMCATTODO: This class could either extend ByteBuffer, or better a ByteBuffer
 // inside this way it could provide the search/etc on ByteBuffer, as a helper.
 
 /**

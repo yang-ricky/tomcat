@@ -244,7 +244,7 @@ class TagLibraryInfoImpl extends TagLibraryInfo implements TagConstants {
     private TldResourcePath generateTldResourcePath(String uri,
             JspCompilationContext ctxt) throws JasperException {
 
-        // TODO: this matches the current implementation but the URL logic looks fishy
+        // TOMCATTODO: this matches the current implementation but the URL logic looks fishy
         // map URI to location per JSP 7.3.6.2
         if (uri.indexOf(':') != -1) {
             // abs_uri, this was not found in the taglibMap so raise an error

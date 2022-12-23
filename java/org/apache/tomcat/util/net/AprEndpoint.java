@@ -483,7 +483,7 @@ public class AprEndpoint extends AbstractEndpoint<Long,Long> implements SNICallB
         }
 
         if (certificates.size() > 2) {
-            // TODO: Can this limitation be removed?
+            // TOMCATTODO: Can this limitation be removed?
             throw new Exception(sm.getString("endpoint.apr.tooManyCertFiles"));
         }
     }

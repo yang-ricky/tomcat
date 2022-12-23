@@ -129,7 +129,7 @@ public abstract class AbstractJsseEndpoint<S,U> extends AbstractEndpoint<S,U> {
             // Only try to negotiate if both client and server have at least
             // one protocol in common
             // Note: Tomcat does not explicitly negotiate http/1.1
-            // TODO: Is this correct? Should it change?
+            // TOMCATTODO: Is this correct? Should it change?
             List<String> commonProtocols = new ArrayList<>(negotiableProtocols);
             commonProtocols.retainAll(clientRequestedApplicationProtocols);
             if (commonProtocols.size() > 0) {

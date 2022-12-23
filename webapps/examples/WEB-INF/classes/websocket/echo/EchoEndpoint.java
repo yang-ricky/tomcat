@@ -50,7 +50,7 @@ public class EchoEndpoint extends Endpoint {
                     remoteEndpointBasic.sendText(message, last);
                 }
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+                // TOMCATTODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -72,7 +72,7 @@ public class EchoEndpoint extends Endpoint {
                     remoteEndpointBasic.sendBinary(message, last);
                 }
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+                // TOMCATTODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

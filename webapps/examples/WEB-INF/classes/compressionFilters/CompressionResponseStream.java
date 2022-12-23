@@ -273,7 +273,7 @@ public class CompressionResponseStream extends ServletOutputStream {
      */
     @Override
     public boolean isReady() {
-        // TODO Auto-generated method stub
+        // TOMCATTODO Auto-generated method stub
         return false;
     }
 
@@ -283,7 +283,7 @@ public class CompressionResponseStream extends ServletOutputStream {
      */
     @Override
     public void setWriteListener(WriteListener listener) {
-        // TODO Auto-generated method stub
+        // TOMCATTODO Auto-generated method stub
 
     }
 

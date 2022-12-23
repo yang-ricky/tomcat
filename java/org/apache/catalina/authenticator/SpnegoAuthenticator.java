@@ -207,7 +207,7 @@ public class SpnegoAuthenticator extends AuthenticatorBase {
             Subject subject = lc.getSubject();
 
             // Assume the GSSContext is stateless
-            // TODO: Confirm this assumption
+            // TOMCATTODO: Confirm this assumption
             final GSSManager manager = GSSManager.getInstance();
             // IBM JDK only understands indefinite lifetime
             final int credentialLifetime;

@@ -76,7 +76,7 @@ import org.apache.tomcat.util.res.StringManager;
  *  to avoid inside tomcat. The goal is to use _only_ MessageByte-based Fields,
  *  and reduce to 0 the memory overhead of tomcat.
  *
- *  TODO:
+ *  TOMCATTODO:
  *  XXX one-buffer parsing - for http ( other protocols don't need that )
  *  XXX remove unused methods
  *  XXX External enumerations, with 0 GC.

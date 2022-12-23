@@ -30,6 +30,7 @@ import org.apache.tomcat.util.net.NioEndpoint;
  * @author Remy Maucherat
  * @author Costin Manolache
  */
+//INFO:
 public class Http11NioProtocol extends AbstractHttp11JsseProtocol<NioChannel> {
 
     private static final Log log = LogFactory.getLog(Http11NioProtocol.class);

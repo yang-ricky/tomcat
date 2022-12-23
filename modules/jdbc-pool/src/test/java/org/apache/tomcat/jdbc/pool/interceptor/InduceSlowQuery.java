@@ -24,7 +24,7 @@ public class InduceSlowQuery extends AbstractQueryReport {
     public static final SecureRandom random = new SecureRandom();
 
     public InduceSlowQuery() {
-        // TODO Auto-generated constructor stub
+        // TOMCATTODO Auto-generated constructor stub
     }
 
     public void doWait() {
@@ -41,7 +41,7 @@ public class InduceSlowQuery extends AbstractQueryReport {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        // TODO Auto-generated method stub
+        // TOMCATTODO Auto-generated method stub
         Object result = super.invoke(proxy, method, args);
         return result;
     }

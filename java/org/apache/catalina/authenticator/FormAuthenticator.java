@@ -336,7 +336,7 @@ public class FormAuthenticator
         // a resource is protected for some HTTP methods but not protected for
         // GET which is used after authentication when redirecting to the
         // protected resource.
-        // TODO: This is similar to the FormAuthenticator.matchRequest() logic
+        // TOMCATTODO: This is similar to the FormAuthenticator.matchRequest() logic
         // Is there a way to remove the duplication?
         Session session = request.getSessionInternal(false);
         if (session != null) {

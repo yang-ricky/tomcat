@@ -36,7 +36,7 @@ public class TestHpack {
         encoder.encode(headers, output);
         output.flip();
         // Size is supposed to be 33 without huffman, or 27 with it
-        // TODO: use the HpackHeaderFunction to enable huffman predictably
+        // TOMCATTODO: use the HpackHeaderFunction to enable huffman predictably
         Assert.assertEquals(27, output.remaining());
         output.clear();
         encoder.encode(headers, output);

@@ -106,7 +106,7 @@ public class Client {
                                 CloseCodes.VIOLATED_POLICY,
                                 "Send Buffer exceeded");
                         try {
-                            // TODO: close() may block if the remote endpoint doesn't read the data
+                            // TOMCATTODO: close() may block if the remote endpoint doesn't read the data
                             // (eventually there will be a TimeoutException). However, this method
                             // (sendMessage) is intended to run asynchronous code and shouldn't
                             // block. Otherwise it would temporarily stop processing of messages
@@ -203,7 +203,7 @@ public class Client {
                 // broke (and onClose will be called), so we don't try to send
                 // other messages.
                 // As a precaution, we close the session (e.g. if a send timeout occurred).
-                // TODO: session.close() blocks, while this handler shouldn't block.
+                // TOMCATTODO: session.close() blocks, while this handler shouldn't block.
                 // Ideally, there should be some method that cancels the connection
                 // immediately...
                 try {

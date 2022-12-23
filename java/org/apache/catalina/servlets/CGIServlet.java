@@ -216,7 +216,7 @@ import org.apache.tomcat.util.res.StringManager;
  * <a href="http://cgi-spec.golux.com">http://cgi-spec.golux.com</a>.
  *
  * </p>
- * <h3>TODO:</h3>
+ * <h3>TOMCATTODO:</h3>
  * <ul>
  * <li> Support for setting headers (for example, Location headers don't work)
  * <li> Support for collapsing multiple header lines (per RFC 2616)

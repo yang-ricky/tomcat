@@ -55,12 +55,12 @@ class HpackEncoder {
 
         @Override
         public boolean shouldUseHuffman(String header, String value) {
-            return value.length() > 5; //TODO: figure out a good value for this
+            return value.length() > 5; //TOMCATTODO: figure out a good value for this
         }
 
         @Override
         public boolean shouldUseHuffman(String header) {
-            return header.length() > 5; //TODO: figure out a good value for this
+            return header.length() > 5; //TOMCATTODO: figure out a good value for this
         }
 
 
@@ -79,7 +79,7 @@ class HpackEncoder {
     private static final Map<String, TableEntry[]> ENCODING_STATIC_TABLE;
 
     private final Deque<TableEntry> evictionQueue = new ArrayDeque<>();
-    private final Map<String, List<TableEntry>> dynamicTable = new HashMap<>(); //TODO: use a custom data structure to reduce allocations
+    private final Map<String, List<TableEntry>> dynamicTable = new HashMap<>(); //TOMCATTODO: use a custom data structure to reduce allocations
 
     static {
         Map<String, TableEntry[]> map = new HashMap<>();
@@ -292,7 +292,7 @@ class HpackEncoder {
         TableEntry[] staticTable = ENCODING_STATIC_TABLE.get(headerName);
         if (staticTable != null) {
             for (TableEntry st : staticTable) {
-                if (st.value != null && st.value.equals(value)) { //todo: some form of lookup?
+                if (st.value != null && st.value.equals(value)) { //TOMCATTODO: some form of lookup?
                     return st;
                 }
             }
@@ -300,7 +300,7 @@ class HpackEncoder {
         List<TableEntry> dynamic = dynamicTable.get(headerName);
         if (dynamic != null) {
             for (TableEntry st : dynamic) {
-                if (st.value.equals(value)) { //todo: some form of lookup?
+                if (st.value.equals(value)) { //TOMCATTODO: some form of lookup?
                     return st;
                 }
             }

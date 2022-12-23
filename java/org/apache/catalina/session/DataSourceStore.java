@@ -616,7 +616,7 @@ public class DataSourceStore extends StoreBase {
 
                 try {
                     // If sessions already exist in DB, remove and insert again.
-                    // TODO:
+                    // TOMCATTODO:
                     // * Check if ID exists in database and if so use UPDATE.
                     remove(session.getIdInternal(), _conn);
 

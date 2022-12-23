@@ -243,7 +243,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public int getMinorVersion() { return minorVersion; }
 
     // web-app elements
-    // TODO: Ignored elements:
+    // TOMCATTODO: Ignored elements:
     // - description
     // - icon
 
@@ -271,7 +271,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // context-param
-    // TODO: description (multiple with language) is ignored
+    // TOMCATTODO: description (multiple with language) is ignored
     private final Map<String,String> contextParams = new HashMap<>();
     public void addContextParam(String param, String value) {
         contextParams.put(param, value);
@@ -279,10 +279,10 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Map<String,String> getContextParams() { return contextParams; }
 
     // filter
-    // TODO: Should support multiple description elements with language
-    // TODO: Should support multiple display-name elements with language
-    // TODO: Should support multiple icon elements
-    // TODO: Description for init-param is ignored
+    // TOMCATTODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple display-name elements with language
+    // TOMCATTODO: Should support multiple icon elements
+    // TOMCATTODO: Description for init-param is ignored
     private final Map<String,FilterDef> filters = new LinkedHashMap<>();
     public void addFilter(FilterDef filter) {
         if (filters.containsKey(filter.getFilterName())) {
@@ -306,9 +306,9 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Set<FilterMap> getFilterMappings() { return filterMaps; }
 
     // listener
-    // TODO: description (multiple with language) is ignored
-    // TODO: display-name (multiple with language) is ignored
-    // TODO: icon (multiple) is ignored
+    // TOMCATTODO: description (multiple with language) is ignored
+    // TOMCATTODO: display-name (multiple with language) is ignored
+    // TOMCATTODO: icon (multiple) is ignored
     private final Set<String> listeners = new LinkedHashSet<>();
     public void addListener(String className) {
         listeners.add(className);
@@ -316,11 +316,11 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Set<String> getListeners() { return listeners; }
 
     // servlet
-    // TODO: description (multiple with language) is ignored
-    // TODO: display-name (multiple with language) is ignored
-    // TODO: icon (multiple) is ignored
-    // TODO: init-param/description (multiple with language) is ignored
-    // TODO: security-role-ref/description (multiple with language) is ignored
+    // TOMCATTODO: description (multiple with language) is ignored
+    // TOMCATTODO: display-name (multiple with language) is ignored
+    // TOMCATTODO: icon (multiple) is ignored
+    // TOMCATTODO: init-param/description (multiple with language) is ignored
+    // TOMCATTODO: security-role-ref/description (multiple with language) is ignored
     private final Map<String,ServletDef> servlets = new HashMap<>();
     public void addServlet(ServletDef servletDef) {
         servlets.put(servletDef.getServletName(), servletDef);
@@ -430,8 +430,8 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // security-constraint
-    // TODO: Should support multiple display-name elements with language
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple display-name elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Set<SecurityConstraint> securityConstraints = new HashSet<>();
     public void addSecurityConstraint(SecurityConstraint securityConstraint) {
         securityConstraint.setCharset(getCharset());
@@ -451,7 +451,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public LoginConfig getLoginConfig() { return loginConfig; }
 
     // security-role
-    // TODO: description (multiple with language) is ignored
+    // TOMCATTODO: description (multiple with language) is ignored
     private final Set<String> securityRoles = new HashSet<>();
     public void addSecurityRole(String securityRole) {
         securityRoles.add(securityRole);
@@ -459,7 +459,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Set<String> getSecurityRoles() { return securityRoles; }
 
     // env-entry
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,ContextEnvironment> envEntries = new HashMap<>();
     public void addEnvEntry(ContextEnvironment envEntry) {
         if (envEntries.containsKey(envEntry.getName())) {
@@ -473,7 +473,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Map<String,ContextEnvironment> getEnvEntries() { return envEntries; }
 
     // ejb-ref
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,ContextEjb> ejbRefs = new HashMap<>();
     public void addEjbRef(ContextEjb ejbRef) {
         ejbRefs.put(ejbRef.getName(),ejbRef);
@@ -481,7 +481,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Map<String,ContextEjb> getEjbRefs() { return ejbRefs; }
 
     // ejb-local-ref
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,ContextLocalEjb> ejbLocalRefs = new HashMap<>();
     public void addEjbLocalRef(ContextLocalEjb ejbLocalRef) {
         ejbLocalRefs.put(ejbLocalRef.getName(),ejbLocalRef);
@@ -491,9 +491,9 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // service-ref
-    // TODO: Should support multiple description elements with language
-    // TODO: Should support multiple display-names elements with language
-    // TODO: Should support multiple icon elements ???
+    // TOMCATTODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple display-names elements with language
+    // TOMCATTODO: Should support multiple icon elements ???
     private final Map<String,ContextService> serviceRefs = new HashMap<>();
     public void addServiceRef(ContextService serviceRef) {
         serviceRefs.put(serviceRef.getName(), serviceRef);
@@ -501,7 +501,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     public Map<String,ContextService> getServiceRefs() { return serviceRefs; }
 
     // resource-ref
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,ContextResource> resourceRefs = new HashMap<>();
     public void addResourceRef(ContextResource resourceRef) {
         if (resourceRefs.containsKey(resourceRef.getName())) {
@@ -517,7 +517,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // resource-env-ref
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,ContextResourceEnvRef> resourceEnvRefs = new HashMap<>();
     public void addResourceEnvRef(ContextResourceEnvRef resourceEnvRef) {
         if (resourceEnvRefs.containsKey(resourceEnvRef.getName())) {
@@ -533,7 +533,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // message-destination-ref
-    // TODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple description elements with language
     private final Map<String,MessageDestinationRef> messageDestinationRefs =
         new HashMap<>();
     public void addMessageDestinationRef(
@@ -554,9 +554,9 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
     }
 
     // message-destination
-    // TODO: Should support multiple description elements with language
-    // TODO: Should support multiple display-names elements with language
-    // TODO: Should support multiple icon elements ???
+    // TOMCATTODO: Should support multiple description elements with language
+    // TOMCATTODO: Should support multiple display-names elements with language
+    // TOMCATTODO: Should support multiple icon elements ???
     private final Map<String,MessageDestination> messageDestinations =
             new HashMap<>();
     public void addMessageDestination(

@@ -79,7 +79,7 @@ public class Rfc6265CookieProcessor extends CookieProcessorBase {
                 if (cookieValue.getType() != MessageBytes.T_BYTES ) {
                     if (log.isDebugEnabled()) {
                         Exception e = new Exception();
-                        // TODO: Review this in light of HTTP/2
+                        // TOMCATTODO: Review this in light of HTTP/2
                         log.debug("Cookies: Parsing cookie as String. Expected bytes.", e);
                     }
                     cookieValue.toBytes();
@@ -105,7 +105,7 @@ public class Rfc6265CookieProcessor extends CookieProcessorBase {
         // Can't use StringBuilder due to DateFormat
         StringBuffer header = new StringBuffer();
 
-        // TODO: Name validation takes place in Cookie and cannot be configured
+        // TOMCATTODO: Name validation takes place in Cookie and cannot be configured
         //       per Context. Moving it to here would allow per Context config
         //       but delay validation until the header is generated. However,
         //       the spec requires an IllegalArgumentException on Cookie

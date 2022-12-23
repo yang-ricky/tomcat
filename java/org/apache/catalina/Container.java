@@ -76,6 +76,7 @@ import org.apache.juli.logging.Log;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
+//INFO:  这里面有组合模式的味道😁.Container到底是个什么东东? 其他设计中有用Container这个词?
 public interface Container extends Lifecycle {
 
 

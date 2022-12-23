@@ -25,6 +25,7 @@ import org.apache.tomcat.util.net.SocketEvent;
  * @author Remy Maucherat
  * @see ProtocolHandler
  */
+//INFO: 用来转换成标准的ServletRequest接口
 public interface Adapter {
 
     /**

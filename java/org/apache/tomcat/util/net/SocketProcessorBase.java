@@ -18,6 +18,7 @@ package org.apache.tomcat.util.net;
 
 import java.util.Objects;
 
+//INFO: 这个就是传说中的 SocketProcessor？
 public abstract class SocketProcessorBase<S> implements Runnable {
 
     protected SocketWrapperBase<S> socketWrapper;

@@ -63,6 +63,7 @@ import org.apache.tomcat.util.threads.ThreadPoolExecutor;
  * @author Mladen Turk
  * @author Remy Maucherat
  */
+// INFO: AbstractEndpoint和接口Endpoint的关系是什么?
 public abstract class AbstractEndpoint<S,U> {
 
     // -------------------------------------------------------------- Constants

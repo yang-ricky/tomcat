@@ -58,6 +58,7 @@ import org.apache.tomcat.util.http.CookieProcessor;
  *
  * @author Craig R. McClanahan
  */
+//INFO: Context代表一个应用, 比如用户信息服务. 可以有多个Servlet(Wrapper)?
 public interface Context extends Container, ContextBind {
 
 

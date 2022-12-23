@@ -40,6 +40,7 @@ package org.apache.catalina;
  *
  * @author Craig R. McClanahan
  */
+//INFO: 一个Engine可以有多个虚拟站点, 这个名字在这里的命名没有直觉感, 因为Engine正常是指引擎
 public interface Engine extends Container {
 
     /**

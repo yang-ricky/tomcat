@@ -31,6 +31,7 @@ import org.apache.catalina.mapper.Mapper;
  *
  * @author Craig R. McClanahan
  */
+//INFO: Service包含一个Engine和多个Connector
 public interface Service extends Lifecycle {
 
     // ------------------------------------------------------------- Properties

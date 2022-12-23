@@ -61,6 +61,7 @@ import org.apache.tomcat.util.res.StringManager;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
+//INFO: 将Tomcat Request转成ServletRequest，再调用容器的service方法？
 public class CoyoteAdapter implements Adapter {
 
     private static final Log log = LogFactory.getLog(CoyoteAdapter.class);

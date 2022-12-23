@@ -43,6 +43,7 @@ import java.util.regex.Pattern;
  *
  * @author Craig R. McClanahan
  */
+//INFO: Host是一个虚拟主机，Tomcat是可以配置多个虚拟主机, 换言之在微服务时间这个概念没有多少价值了
 public interface Host extends Container {
 
 

@@ -160,13 +160,13 @@ public class ResolverImpl extends Resolver {
             } else if (key.equals("SSL_SESSION_ID")) {
                 return sslSupport.getSessionId();
             } else if (key.equals("SSL_SESSION_RESUMED")) {
-                // FIXME session resumption state, not available anywhere
+                // TOMCATFIXME session resumption state, not available anywhere
             } else if (key.equals("SSL_SECURE_RENEG")) {
-                // FIXME available from SSLHostConfig
+                // TOMCATFIXME available from SSLHostConfig
             } else if (key.equals("SSL_COMPRESS_METHOD")) {
-                // FIXME available from SSLHostConfig
+                // TOMCATFIXME available from SSLHostConfig
             } else if (key.equals("SSL_TLS_SNI")) {
-                // FIXME from handshake SNI processing
+                // TOMCATFIXME from handshake SNI processing
             } else if (key.equals("SSL_CIPHER")) {
                 return sslSupport.getCipherSuite();
             } else if (key.equals("SSL_CIPHER_EXPORT")) {
@@ -200,11 +200,11 @@ public class ResolverImpl extends Resolver {
                     } else if (key.startsWith("SAN_OTHER_msUPN_")) {
                         // Type otherName, which is 0
                         key = key.substring("SAN_OTHER_msUPN_".length());
-                        // FIXME OID from resolveAlternateName
+                        // TOMCATFIXME OID from resolveAlternateName
                     } else if (key.equals("CERT_RFC4523_CEA")) {
-                        // FIXME return certificate[0] format CertificateExactAssertion in RFC4523
+                        // TOMCATFIXME return certificate[0] format CertificateExactAssertion in RFC4523
                     } else if (key.equals("VERIFY")) {
-                        // FIXME return verification state, not available anywhere
+                        // TOMCATFIXME return verification state, not available anywhere
                     }
                 }
             } else if (key.startsWith("SSL_SERVER_")) {
@@ -217,7 +217,7 @@ public class ResolverImpl extends Resolver {
                     } else if (key.startsWith("SAN_OTHER_dnsSRV_")) {
                         // Type otherName, which is 0
                         key = key.substring("SAN_OTHER_dnsSRV_".length());
-                        // FIXME OID from resolveAlternateName
+                        // TOMCATFIXME OID from resolveAlternateName
                     }
                 }
             }

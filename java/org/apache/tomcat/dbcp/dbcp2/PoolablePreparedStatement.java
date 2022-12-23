@@ -131,7 +131,7 @@ public class PoolablePreparedStatement<K> extends DelegatingPreparedStatement {
 
         // The JDBC spec requires that a statement closes any open
         // ResultSet's when it is closed.
-        // FIXME The PreparedStatement we're wrapping should handle this for us.
+        // TOMCATFIXME The PreparedStatement we're wrapping should handle this for us.
         // See bug 17301 for what could happen when ResultSets are closed twice.
         final List<AbandonedTrace> resultSetList = getTrace();
         if (resultSetList != null) {

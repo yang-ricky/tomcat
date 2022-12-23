@@ -523,7 +523,7 @@ public class ManagedBean implements java.io.Serializable {
                     sm.getString("managedMBean.noOperation", aname));
 
         // Prepare the signature required by Java reflection APIs
-        // FIXME - should we use the signature from opInfo?
+        // TOMCATFIXME - should we use the signature from opInfo?
         Class<?> types[] = new Class[signature.length];
         for (int i = 0; i < signature.length; i++) {
             types[i] = BaseModelMBean.getAttributeClass(signature[i]);
@@ -531,7 +531,7 @@ public class ManagedBean implements java.io.Serializable {
 
         // Locate the method to be invoked, either in this MBean itself
         // or in the corresponding managed resource
-        // FIXME - Accessible methods in superinterfaces?
+        // TOMCATFIXME - Accessible methods in superinterfaces?
         Object object = null;
         Exception exception = null;
         try {

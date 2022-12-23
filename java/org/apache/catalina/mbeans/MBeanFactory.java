@@ -294,7 +294,7 @@ public class MBeanFactory {
         retobj.setSecure(isSSL);
         retobj.setScheme(isSSL ? "https" : "http");
         // Add the new instance to its parent component
-        // FIX ME - addConnector will fail
+        // TOMCATFIX ME - addConnector will fail
         ObjectName pname = new ObjectName(parent);
         Service service = getService(pname);
         service.addConnector(retobj);
@@ -603,7 +603,7 @@ public class MBeanFactory {
         Container container = getParentContainerFromParent(parentName);
 
         if (container == null) {
-            // TODO
+            // TOMCATTODO
             throw new IllegalArgumentException();
         }
 
@@ -639,7 +639,7 @@ public class MBeanFactory {
         if (container instanceof Context) {
             ((Context) container).setLoader(loader);
         }
-        // FIXME add Loader.getObjectName
+        // TOMCATFIXME add Loader.getObjectName
         //ObjectName oname = loader.getObjectName();
         ObjectName oname =
             MBeanUtils.createObjectName(pname.getDomain(), loader);

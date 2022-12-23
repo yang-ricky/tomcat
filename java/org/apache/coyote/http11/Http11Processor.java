@@ -923,7 +923,7 @@ public class Http11Processor extends AbstractProcessor {
                     FastHttpDateFormat.getCurrentDate());
         }
 
-        // FIXME: Add transfer encoding header
+        // TOMCATFIXME: Add transfer encoding header
 
         if ((entityBody) && (!contentDelimitation) || connectionClosePresent) {
             // Disable keep-alive if:

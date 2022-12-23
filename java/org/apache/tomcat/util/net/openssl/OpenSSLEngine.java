@@ -1340,7 +1340,7 @@ public final class OpenSSLEngine extends SSLEngine implements SSLUtil.ProtocolIn
 
         @Override
         public Certificate[] getLocalCertificates() {
-            // FIXME (if possible): Not available in the OpenSSL API
+            // TOMCATFIXME (if possible): Not available in the OpenSSL API
             return EMPTY_CERTIFICATES;
         }
 

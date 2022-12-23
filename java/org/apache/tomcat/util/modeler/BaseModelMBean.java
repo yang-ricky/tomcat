@@ -195,7 +195,7 @@ public class BaseModelMBean implements DynamicMBean, MBeanRegistration,
         }
 
         // Return the results of this method invocation
-        // FIXME - should we validate the return type?
+        // TOMCATFIXME - should we validate the return type?
         return result;
     }
 
@@ -308,7 +308,7 @@ public class BaseModelMBean implements DynamicMBean, MBeanRegistration,
         }
 
         // Return the results of this method invocation
-        // FIXME - should we validate the return type?
+        // TOMCATFIXME - should we validate the return type?
         return result;
 
     }
@@ -608,7 +608,7 @@ public class BaseModelMBean implements DynamicMBean, MBeanRegistration,
         if (listener == null)
             throw new IllegalArgumentException(sm.getString("baseModelMBean.nullListener"));
 
-        // FIXME - currently this removes *all* notifications for this listener
+        // TOMCATFIXME - currently this removes *all* notifications for this listener
         if (attributeBroadcaster != null) {
             attributeBroadcaster.removeNotificationListener(listener);
         }

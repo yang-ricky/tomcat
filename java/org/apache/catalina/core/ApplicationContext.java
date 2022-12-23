@@ -672,7 +672,7 @@ public class ApplicationContext implements ServletContext {
             } catch (Throwable t) {
                 ExceptionUtils.handleThrowable(t);
                 context.fireContainerEvent("afterContextAttributeRemoved", listener);
-                // FIXME - should we do anything besides log these?
+                // TOMCATFIXME - should we do anything besides log these?
                 log(sm.getString("applicationContext.attributeEvent"), t);
             }
         }
@@ -735,7 +735,7 @@ public class ApplicationContext implements ServletContext {
                 } else {
                     context.fireContainerEvent("afterContextAttributeAdded", listener);
                 }
-                // FIXME - should we do anything besides log these?
+                // TOMCATFIXME - should we do anything besides log these?
                 log(sm.getString("applicationContext.attributeEvent"), t);
             }
         }
@@ -770,7 +770,7 @@ public class ApplicationContext implements ServletContext {
         }
 
         if (!context.getState().equals(LifecycleState.STARTING_PREP)) {
-            //TODO Spec breaking enhancement to ignore this restriction
+            //TOMCATTODO Spec breaking enhancement to ignore this restriction
             throw new IllegalStateException(
                     sm.getString("applicationContext.addFilter.ise",
                             getContextPath()));
@@ -891,7 +891,7 @@ public class ApplicationContext implements ServletContext {
         }
 
         if (!context.getState().equals(LifecycleState.STARTING_PREP)) {
-            //TODO Spec breaking enhancement to ignore this restriction
+            //TOMCATTODO Spec breaking enhancement to ignore this restriction
             throw new IllegalStateException(
                     sm.getString("applicationContext.addServlet.ise",
                             getContextPath()));
@@ -1179,7 +1179,7 @@ public class ApplicationContext implements ServletContext {
     public void declareRoles(String... roleNames) {
 
         if (!context.getState().equals(LifecycleState.STARTING_PREP)) {
-            //TODO Spec breaking enhancement to ignore this restriction
+            //TOMCATTODO Spec breaking enhancement to ignore this restriction
             throw new IllegalStateException(
                     sm.getString("applicationContext.addRole.ise",
                             getContextPath()));

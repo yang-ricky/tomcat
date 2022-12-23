@@ -960,7 +960,7 @@ public abstract class PersistentManagerBase extends ManagerBase
 
         Session sessions[] = findSessions();
 
-        // FIXME: Smarter algorithm (LRU)
+        // TOMCATFIXME: Smarter algorithm (LRU)
         int limit = (int) (getMaxActiveSessions() * 0.9);
 
         if (limit >= sessions.length)

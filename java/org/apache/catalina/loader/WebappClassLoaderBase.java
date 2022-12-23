@@ -1841,7 +1841,7 @@ public abstract class WebappClassLoaderBase extends URLClassLoader
                         }
                     } catch (/*SecurityException |*/ NoSuchFieldException | /*IllegalArgumentException |*/
                             IllegalAccessException | RuntimeException e) {
-                        // FIXME: InaccessibleObjectException is only available in Java 9+,
+                        // TOMCATFIXME: InaccessibleObjectException is only available in Java 9+,
                         // swapped for RuntimeException for now
                         log.warn(sm.getString("webappClassLoader.stopThreadFail",
                                 thread.getName(), getContextName()), e);

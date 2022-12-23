@@ -574,13 +574,13 @@ public class DeltaManager extends ClusterManagerBase{
                 // needed
                 session.setAccessCount(0);
                 session.resetDeltaRequest();
-                // FIXME How inform other session id cache like SingleSignOn
+                // TOMCATFIXME How inform other session id cache like SingleSignOn
                 // increment sessionCounter to correct stats report
                 if (findSession(session.getIdInternal()) == null ) {
                     sessionCounter++;
                 } else {
                     sessionReplaceCounter++;
-                    // FIXME better is to grap this sessions again !
+                    // TOMCATFIXME better is to grap this sessions again !
                     if (log.isWarnEnabled()) {
                         log.warn(sm.getString("deltaManager.loading.existing.session",
                                 session.getIdInternal()));
@@ -693,7 +693,7 @@ public class DeltaManager extends ClusterManagerBase{
             // request session state
             counterSend_EVT_GET_ALL_SESSIONS++;
             stateTransferred = false ;
-            // FIXME This send call block the deploy thread, when sender waitForAck is enabled
+            // TOMCATFIXME This send call block the deploy thread, when sender waitForAck is enabled
             try {
                 synchronized(receivedMessageQueue) {
                      receiverQueue = true ;
@@ -702,7 +702,7 @@ public class DeltaManager extends ClusterManagerBase{
                 if (log.isInfoEnabled())
                     log.info(sm.getString("deltaManager.waitForSessionState",
                             getName(), mbr, Integer.valueOf(getStateTransferTimeout())));
-                // FIXME At sender ack mode this method check only the state
+                // TOMCATFIXME At sender ack mode this method check only the state
                 //       transfer and resend is a problem!
                 waitForSendAllSessions(beforeSendTime);
             } finally {
@@ -713,7 +713,7 @@ public class DeltaManager extends ClusterManagerBase{
                         } else {
                             if (smsg.getEventType() != SessionMessage.EVT_GET_ALL_SESSIONS &&
                                     smsg.getTimestamp() >= stateTransferCreateSendTime) {
-                                // FIXME handle EVT_GET_ALL_SESSIONS later
+                                // TOMCATFIXME handle EVT_GET_ALL_SESSIONS later
                                 messageReceived(smsg, smsg.getAddress());
                             } else {
                                 if (log.isWarnEnabled()) {

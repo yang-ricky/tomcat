@@ -110,7 +110,7 @@ public final class ApplicationFilterFactory {
             ApplicationFilterConfig filterConfig = (ApplicationFilterConfig)
                     context.findFilterConfig(filterMap.getFilterName());
             if (filterConfig == null) {
-                // FIXME - log configuration problem
+                // TOMCATFIXME - log configuration problem
                 continue;
             }
             filterChain.addFilter(filterConfig);
@@ -126,7 +126,7 @@ public final class ApplicationFilterFactory {
             ApplicationFilterConfig filterConfig = (ApplicationFilterConfig)
                     context.findFilterConfig(filterMap.getFilterName());
             if (filterConfig == null) {
-                // FIXME - log configuration problem
+                // TOMCATFIXME - log configuration problem
                 continue;
             }
             filterChain.addFilter(filterConfig);

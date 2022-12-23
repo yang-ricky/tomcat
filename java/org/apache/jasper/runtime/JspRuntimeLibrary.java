@@ -941,7 +941,7 @@ public class JspRuntimeLibrary {
         if (flush && !(out instanceof BodyContent))
             out.flush();
 
-        // FIXME - It is tempting to use request.getRequestDispatcher() to
+        // TOMCATFIXME - It is tempting to use request.getRequestDispatcher() to
         // resolve a relative path directly, but Catalina currently does not
         // take into account whether the caller is inside a RequestDispatcher
         // include or not.  Whether Catalina *should* take that into account

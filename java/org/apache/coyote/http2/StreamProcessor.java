@@ -64,7 +64,7 @@ class StreamProcessor extends AbstractProcessor {
 
     final void process(SocketEvent event) {
         try {
-            // FIXME: the regular processor syncs on socketWrapper, but here this deadlocks
+            // TOMCATFIXME: the regular processor syncs on socketWrapper, but here this deadlocks
             synchronized (this) {
                 // HTTP/2 equivalent of AbstractConnectionHandler#process() without the
                 // socket <-> processor mapping

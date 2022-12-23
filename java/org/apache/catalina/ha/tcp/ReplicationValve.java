@@ -414,10 +414,10 @@ public class ReplicationValve
                 sendCrossContextSession();
             }
         } catch (Exception x) {
-            // FIXME we have a lot of sends, but the trouble with one node stops the correct replication to other nodes!
+            // TOMCATFIXME we have a lot of sends, but the trouble with one node stops the correct replication to other nodes!
             log.error(sm.getString("ReplicationValve.send.failure"), x);
         } finally {
-            // FIXME this stats update are not cheap!!
+            // TOMCATFIXME this stats update are not cheap!!
             if(doStatistics()) {
                 updateStats(totalstart,start);
             }

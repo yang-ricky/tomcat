@@ -242,7 +242,7 @@ public class TestContextConfigAnnotation {
         Assert.assertEquals("DisplayName", fdef.getDisplayName());
         Assert.assertEquals("LargeIcon", fdef.getLargeIcon());
         Assert.assertEquals("SmallIcon", fdef.getSmallIcon());
-        // FIXME: Strange why servletDef is Boolean and FilterDef is String?
+        // TOMCATFIXME: Strange why servletDef is Boolean and FilterDef is String?
         Assert.assertEquals("true", fdef.getAsyncSupported());
 
         String[] dis = filterMap.getDispatcherNames();

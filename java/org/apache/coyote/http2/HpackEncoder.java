@@ -135,7 +135,7 @@ class HpackEncoder {
             }
         }
         while (it < currentHeaders.size()) {
-            // FIXME: Review lowercase policy
+            // TOMCATFIXME: Review lowercase policy
             String headerName = headers.getName(it).toString().toLowerCase(Locale.US);
             boolean skip = false;
             if (firstPass) {

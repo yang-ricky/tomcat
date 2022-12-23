@@ -6189,7 +6189,7 @@ public class StandardContext extends ContainerBase
      */
     @Override
     public MBeanNotificationInfo[] getNotificationInfo() {
-        // FIXME: we not send j2ee.attribute.changed
+        // TOMCATFIXME: we not send j2ee.attribute.changed
         if (notificationInfo == null) {
             notificationInfo = new MBeanNotificationInfo[] {
                     new MBeanNotificationInfo(

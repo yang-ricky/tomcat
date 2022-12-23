@@ -1332,7 +1332,7 @@ public class HostConfig implements LifecycleListener {
      * @param context web application context
      */
     protected void addWatchedResources(DeployedApplication app, String docBase, Context context) {
-        // FIXME: Feature idea. Add support for patterns (ex: WEB-INF/*,
+        // TOMCATFIXME: Feature idea. Add support for patterns (ex: WEB-INF/*,
         //        WEB-INF/*.xml), where we would only check if at least one
         //        resource is newer than app.timestamp
         File docBaseFile = null;

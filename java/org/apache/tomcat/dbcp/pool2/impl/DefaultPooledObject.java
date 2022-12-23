@@ -149,7 +149,7 @@ public class DefaultPooledObject<T> implements PooledObject<T> {
             result.append(state.toString());
         }
         return result.toString();
-        // TODO add other attributes
+        // TOMCATTODO add other attributes
     }
 
     @Override
@@ -171,7 +171,7 @@ public class DefaultPooledObject<T> implements PooledObject<T> {
         } else if (state == PooledObjectState.EVICTION_RETURN_TO_HEAD) {
             state = PooledObjectState.IDLE;
             if (!idleQueue.offerFirst(this)) {
-                // TODO - Should never happen
+                // TOMCATTODO - Should never happen
             }
         }
 
@@ -195,11 +195,11 @@ public class DefaultPooledObject<T> implements PooledObject<T> {
             }
             return true;
         } else if (state == PooledObjectState.EVICTION) {
-            // TODO Allocate anyway and ignore eviction test
+            // TOMCATTODO Allocate anyway and ignore eviction test
             state = PooledObjectState.EVICTION_RETURN_TO_HEAD;
             return false;
         }
-        // TODO if validating and testOnBorrow == true then pre-allocate for
+        // TOMCATTODO if validating and testOnBorrow == true then pre-allocate for
         // performance
         return false;
     }

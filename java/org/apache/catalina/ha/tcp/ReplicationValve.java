@@ -324,7 +324,7 @@ public class ReplicationValve
                 if(log.isDebugEnabled()) {
                     log.debug(sm.getString("ReplicationValve.crossContext.add"));
                 }
-                //FIXME add Pool of Arraylists
+                //TOMCATFIXME add Pool of Arraylists
                 crossContextSessions.set(new ArrayList<>());
             }
             getNext().invoke(request, response);

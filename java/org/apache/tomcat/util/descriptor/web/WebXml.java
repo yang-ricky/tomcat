@@ -705,7 +705,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
      */
     public String toXml() {
         StringBuilder sb = new StringBuilder(2048);
-        // TODO - Various, icon, description etc elements are skipped - mainly
+        // TOMCATTODO - Various, icon, description etc elements are skipped - mainly
         //        because they are ignored when web.xml is parsed - see above
 
         // NOTE - Elements need to be written in the order defined in the 2.3
@@ -1264,7 +1264,7 @@ public class WebXml extends XmlEncodingBase implements DocumentProperties.Charse
                             ch.getHandlerclass());
                     sb.append("    </handler>\n");
                 }
-                // TODO handler-chains
+                // TOMCATTODO handler-chains
                 appendElement(sb, INDENT4, "mapped-name", serviceRef.getProperty("mappedName"));
                 for (InjectionTarget target : serviceRef.getInjectionTargets()) {
                     sb.append("    <injection-target>\n");

@@ -51,6 +51,7 @@ import org.apache.tomcat.util.net.SocketEvent;
 import org.apache.tomcat.util.net.SocketWrapperBase;
 import org.apache.tomcat.util.res.StringManager;
 
+//INFO: This is a place which is quite stable
 public abstract class AbstractProtocol<S> implements ProtocolHandler,
         MBeanRegistration {
 

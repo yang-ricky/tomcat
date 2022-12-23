@@ -269,7 +269,7 @@ class JspDocumentParser
     @Override
     public InputSource resolveEntity(String name, String publicId,
             String baseURI, String systemId) throws SAXException, IOException {
-        // TODO URLs returned by the Jar abstraction may be of the form jar:jar:
+        // TOMCATTODO URLs returned by the Jar abstraction may be of the form jar:jar:
         //      which is not a URL that can be resolved by the JRE. This should
         //      use the JarFactory to construct and return a valid InputSource.
         return entityResolver.resolveEntity(name, publicId, baseURI, systemId);

@@ -33,6 +33,7 @@ import org.apache.tomcat.util.net.SSLHostConfig;
  * @author Costin Manolache
  * @see Adapter
  */
+//INFO: 这个接口的意义和价值?
 public interface ProtocolHandler {
 
     /**

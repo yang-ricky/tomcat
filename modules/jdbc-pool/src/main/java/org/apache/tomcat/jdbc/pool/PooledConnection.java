@@ -203,7 +203,7 @@ public class PooledConnection implements PooledConnectionMBean {
             } //catch
         } //end if
         //if (poolProperties.getDataSource()==null && poolProperties.getDataSourceJNDI()!=null) {
-            //TODO lookup JNDI name
+            //TOMCATTODO lookup JNDI name
         //}
 
         if (poolProperties.getDataSource()!=null) {

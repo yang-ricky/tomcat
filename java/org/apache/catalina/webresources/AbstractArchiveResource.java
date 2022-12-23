@@ -211,7 +211,7 @@ public abstract class AbstractArchiveResource extends AbstractResource {
     @Override
     public Certificate[] getCertificates() {
         if (!readCerts) {
-            // TODO - get content first
+            // TOMCATTODO - get content first
             throw new IllegalStateException();
         }
         return certificates;

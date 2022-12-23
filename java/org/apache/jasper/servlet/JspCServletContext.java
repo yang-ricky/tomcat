@@ -214,9 +214,9 @@ public class JspCServletContext implements ServletContext {
 
     private Map<String, WebXml> scanForFragments(WebXmlParser webXmlParser) throws JasperException {
         StandardJarScanner scanner = new StandardJarScanner();
-        // TODO - enabling this means initializing the classloader first in JspC
+        // TOMCATTODO - enabling this means initializing the classloader first in JspC
         scanner.setScanClassPath(false);
-        // TODO - configure filter rules from Ant rather then system properties
+        // TOMCATTODO - configure filter rules from Ant rather then system properties
         scanner.setJarScanFilter(new StandardJarScanFilter());
 
         FragmentJarScannerCallback callback =

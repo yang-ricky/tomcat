@@ -30,6 +30,8 @@ import org.apache.tomcat.util.net.NioEndpoint;
  * @author Remy Maucherat
  * @author Costin Manolache
  */
+//INFO: 这里会相对变化的部分. 这里是HTTP1.1和非阻塞的封装，是两个维度的封装. 未来如果有Http2和异步非阻塞，新增一个类就好了.
+// 如果是三个维度呢?
 public class Http11NioProtocol extends AbstractHttp11JsseProtocol<NioChannel> {
 
     private static final Log log = LogFactory.getLog(Http11NioProtocol.class);

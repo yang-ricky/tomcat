@@ -206,7 +206,7 @@ class TagLibraryInfoImpl extends TagLibraryInfo implements TagConstants {
 
             Set<String> names = new HashSet<>();
             List<FunctionInfo> functionInfos = taglibXml.getFunctions();
-            // TODO Move this validation to the parsing stage
+            // TOMCATTODO Move this validation to the parsing stage
             for (FunctionInfo functionInfo : functionInfos) {
                 String name = functionInfo.getName();
                 if (!names.add(name)) {

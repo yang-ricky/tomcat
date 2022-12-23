@@ -883,7 +883,7 @@ class ApplicationHttpRequest extends HttpServletRequestWrapper {
         MessageBytes queryMB = MessageBytes.newInstance();
         queryMB.setString(queryParamString);
 
-        // TODO
+        // TOMCATTODO
         // - Should only use body encoding if useBodyEncodingForURI is true
         // - Otherwise, should use URIEncoding
         // - The problem is that the connector is not available...

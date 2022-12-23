@@ -2103,7 +2103,7 @@ public class AprEndpoint extends AbstractEndpoint<Long,Long> implements SNICallB
             this.blockingStatusReadLock = lock.readLock();
             this.blockingStatusWriteLock = lock.writeLock();
 
-            // TODO Make the socketWriteBuffer size configurable and align the
+            // TOMCATTODO Make the socketWriteBuffer size configurable and align the
             //      SSL and app buffer size settings with NIO & NIO2.
             if (endpoint.isSSLEnabled()) {
                 sslOutputBuffer = ByteBuffer.allocateDirect(SSL_OUTPUT_BUFFER_SIZE);

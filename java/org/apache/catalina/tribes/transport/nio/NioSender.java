@@ -365,7 +365,7 @@ public class NioSender extends AbstractSender {
                     writebuf = getBuffer(length);
                 }
 
-                // TODO use ByteBuffer.wrap to avoid copying the data.
+                // TOMCATTODO use ByteBuffer.wrap to avoid copying the data.
                 writebuf.put(data,offset,length);
                 writebuf.flip();
                 if (isConnected()) {

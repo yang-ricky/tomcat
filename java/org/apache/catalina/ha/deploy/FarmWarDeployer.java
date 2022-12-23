@@ -219,7 +219,7 @@ public class FarmWarDeployer extends ClusterListener
                     log.debug(sm.getString("farmWarDeployer.msgRxDeploy",
                             fmsg.getContextName(), fmsg.getFileName()));
                 FileMessageFactory factory = getFactory(fmsg);
-                // TODO correct second try after app is in service!
+                // TOMCATTODO correct second try after app is in service!
                 if (factory.writeMessage(fmsg)) {
                     //last message received war file is completed
                     String name = factory.getFile().getName();
@@ -497,7 +497,7 @@ public class FarmWarDeployer extends ClusterListener
      * @throws Exception If an error occurs removing the context
      */
     protected void remove(String contextName) throws Exception {
-        // TODO Handle remove also work dir content !
+        // TOMCATTODO Handle remove also work dir content !
         // Stop the context first to be nicer
         Context context = (Context) host.findChild(contextName);
         if (context != null) {

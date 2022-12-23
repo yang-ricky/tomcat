@@ -785,7 +785,7 @@ public class NamingContext implements Context {
         throws NamingException {
         throw  new OperationNotSupportedException
             (sm.getString("namingContext.noAbsoluteName"));
-        //FIXME ?
+        //TOMCATFIXME ?
     }
 
 

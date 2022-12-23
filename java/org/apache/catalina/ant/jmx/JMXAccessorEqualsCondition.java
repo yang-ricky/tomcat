@@ -70,7 +70,7 @@ public class JMXAccessorEqualsCondition extends JMXAccessorConditionBase {
             throw new BuildException(
                     "Must specify an MBean name and attribute for equals condition");
         }
-        //FIXME check url or host/parameter
+        //TOMCATFIXME check url or host/parameter
         String jmxValue = accessJMXValue();
         if (jmxValue != null) {
             return jmxValue.equals(value);

@@ -78,7 +78,7 @@ public abstract class BodyContent extends JspWriter {
         try {
             this.clear();
         } catch (IOException ex) {
-            // TODO -- clean this one up.
+            // TOMCATTODO -- clean this one up.
             throw new Error("internal error!;");
         }
     }

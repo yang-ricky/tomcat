@@ -577,7 +577,7 @@ public class Base64 extends BaseNCodec {
                 lineSeparator == null ? 0 : lineSeparator.length);
         // Needs to be set early to avoid NPE during call to containsAlphabetOrPad() below
         this.decodeTable = urlSafe ? URL_SAFE_DECODE_TABLE : STANDARD_DECODE_TABLE;
-        // TODO could be simplified if there is no requirement to reject invalid line sep when length <=0
+        // TOMCATTODO could be simplified if there is no requirement to reject invalid line sep when length <=0
         // @see test case Base64Test.testConstructors()
         if (lineSeparator != null) {
             if (containsAlphabetOrPad(lineSeparator)) {

@@ -310,7 +310,7 @@ public class NioReplicationTask extends AbstractRxTask {
             if (channel instanceof DatagramChannel) {
                 DatagramChannel dchannel = (DatagramChannel)channel;
                 //were using a shared channel, document says its thread safe
-                //TODO check optimization, one channel per thread?
+                //TOMCATTODO check optimization, one channel per thread?
                 while ( total < command.length ) {
                     total += dchannel.send(buf, udpaddr);
                 }

@@ -200,7 +200,7 @@ public abstract class BaseObjectPoolConfig<T> extends BaseObject implements Clon
 
     private boolean jmxEnabled = DEFAULT_JMX_ENABLE;
 
-    // TODO Consider changing this to a single property for 3.x
+    // TOMCATTODO Consider changing this to a single property for 3.x
     private String jmxNamePrefix = DEFAULT_JMX_NAME_PREFIX;
 
     private String jmxNameBase = DEFAULT_JMX_NAME_BASE;

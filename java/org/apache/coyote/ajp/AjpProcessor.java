@@ -1033,7 +1033,7 @@ public class AjpProcessor extends AbstractProcessor {
     protected final void flush() throws IOException {
         // Calling code should ensure that there is no data in the buffers for
         // non-blocking writes.
-        // TODO Validate the assertion above
+        // TOTOMCATTODODO Validate the assertion above
         if (!responseFinished) {
             if (protocol.getAjpFlush()) {
                 // Send the flush message

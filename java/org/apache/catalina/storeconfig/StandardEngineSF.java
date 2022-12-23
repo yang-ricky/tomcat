@@ -59,7 +59,7 @@ public class StandardEngineSF extends StoreFactoryBase {
             // Store nested <Realm> element
             Realm realm = engine.getRealm();
             Realm parentRealm = null;
-            // TODO is this case possible? (see it a old Server 5.0 impl)
+            // TOMCATTODO is this case possible? (see it a old Server 5.0 impl)
             if (engine.getParent() != null) {
                 parentRealm = engine.getParent().getRealm();
             }

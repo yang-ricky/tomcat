@@ -69,8 +69,8 @@ public class PooledSoftReference<T> extends DefaultPooledObject<T> {
             result.append(getState().toString());
         }
         return result.toString();
-        // TODO add other attributes
-        // TODO encapsulate state and other attribute display in parent
+        // TOMCATTODO add other attributes
+        // TOMCATTODO encapsulate state and other attribute display in parent
     }
 
     /**

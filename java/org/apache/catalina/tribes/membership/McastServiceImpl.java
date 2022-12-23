@@ -486,7 +486,7 @@ public class McastServiceImpl extends MembershipProviderBase {
         }
         packet.setAddress(address);
         packet.setPort(port);
-        //TODO this operation is not thread safe
+        //TOMCATTODO this operation is not thread safe
         synchronized (sendLock) {
             socket.send(packet);
         }

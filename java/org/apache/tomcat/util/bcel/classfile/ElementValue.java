@@ -71,7 +71,7 @@ public abstract class ElementValue
                 return new ClassElementValue(CLASS, input.readUnsignedShort(), cpool);
 
             case ANNOTATION:
-                // TODO isRuntimeVisible
+                // TOMCATTODO isRuntimeVisible
                 return new AnnotationElementValue(ANNOTATION, new AnnotationEntry(input, cpool), cpool);
 
             case ARRAY:

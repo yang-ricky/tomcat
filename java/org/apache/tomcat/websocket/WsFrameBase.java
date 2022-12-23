@@ -983,7 +983,7 @@ public abstract class WsFrameBase {
 
         @Override
         public List<MessagePart> sendMessagePart(List<MessagePart> messageParts) {
-            // TODO Masking should move to this method
+            // TOMCATTODO Masking should move to this method
             // NO-OP send so simply return the message unchanged.
             return messageParts;
         }

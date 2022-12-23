@@ -820,7 +820,7 @@ public class GenericObjectPool<T> extends BaseGenericObjectPool<T>
                             }
                         }
                         if (!underTest.endEvictionTest(idleObjects)) {
-                            // TODO - May need to add code here once additional
+                            // TOMCATTODO - May need to add code here once additional
                             // states are used
                         }
                     }

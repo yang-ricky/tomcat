@@ -390,7 +390,7 @@ public class WebdavServlet extends DefaultServlet {
         if (!super.checkIfHeaders(request, response, resource))
             return false;
 
-        // TODO : Checking the WebDAV If header
+        // TOMCATTODO : Checking the WebDAV If header
         return true;
     }
 
@@ -764,7 +764,7 @@ public class WebdavServlet extends DefaultServlet {
             try {
                 // Document document =
                 documentBuilder.parse(new InputSource(req.getInputStream()));
-                // TODO : Process this request body
+                // TOMCATTODO : Process this request body
                 resp.sendError(WebdavStatus.SC_NOT_IMPLEMENTED);
                 return;
 

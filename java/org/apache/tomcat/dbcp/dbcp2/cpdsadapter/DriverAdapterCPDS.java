@@ -706,7 +706,7 @@ public class DriverAdapterCPDS implements ConnectionPoolDataSource, Referenceabl
         builder.append("[description=");
         builder.append(description);
         builder.append(", url=");
-        // TODO What if the connection string contains a 'user' or 'password' query parameter but that connection string
+        // TOMCATTODO What if the connection string contains a 'user' or 'password' query parameter but that connection string
         // is not in a legal URL format?
         builder.append(url);
         builder.append(", driver=");

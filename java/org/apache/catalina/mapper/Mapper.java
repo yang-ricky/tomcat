@@ -45,6 +45,11 @@ import org.apache.tomcat.util.res.StringManager;
  *
  * @author Remy Maucherat
  */
+//INFO: Mapper的主要作用是将用户的请求引流到Wrapper.
+// 1. 根据协议和端口号可以锁定Connector,比如基于Http的Connecter, 知道了Connector, 那肯定知道了Service, 知道了Service那肯定知道了Engine.
+// 2. 根据域名去匹配Host
+// 3. 然后URL的路径去寻找Context
+// 4. 再根据URL找到具体的Wrapper和Servlet
 public final class Mapper {
 
 

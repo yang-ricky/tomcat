@@ -37,6 +37,7 @@ import org.apache.catalina.connector.Response;
  * @author Gunnar Rjnning
  * @author Peter Donald
  */
+//INFO: 职责链的味道? 😁 代表处理的一个节点。但是和Filter有区别吗?
 public interface Valve {
 
 

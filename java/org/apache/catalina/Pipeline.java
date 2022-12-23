@@ -36,6 +36,7 @@ import java.util.Set;
  * @author Craig R. McClanahan
  * @author Peter Donald
  */
+//INFO: 用来编排Valve? 基本上如果用来编排类，就模仿它了
 public interface Pipeline extends Contained {
 
     /**

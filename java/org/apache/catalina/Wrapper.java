@@ -46,6 +46,7 @@ import jakarta.servlet.UnavailableException;
  *
  * @author Craig R. McClanahan
  */
+//INFO: Wrapper是一种Servlet吗？如果是意味着什么?
 public interface Wrapper extends Container {
 
     /**

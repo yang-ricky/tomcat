@@ -43,7 +43,7 @@ import org.apache.catalina.startup.Catalina;
  *
  * @author Craig R. McClanahan
  */
-//INFO: 包含多个Service. Server就是一个tomcat实例?
+//INFO: Server包含多个Service. Server就是一个tomcat实例?
 public interface Server extends Lifecycle {
 
     // ------------------------------------------------------------- Properties

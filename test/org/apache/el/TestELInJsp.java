@@ -159,7 +159,7 @@ public class TestELInJsp extends TomcatBaseTest {
         res = getUrl("http://localhost:" + getPort() + "/test/bug45nnn/bug45451c.jsp");
         result = res.toString();
         // Warning: JSP attribute escaping != Java String escaping
-        // TODO - Currently we allow a single unescaped \ in attribute values
+        // TOMCATTODO - Currently we allow a single unescaped \ in attribute values
         //        Review if this should cause a warning/error
         assertEcho(result, "00-${1+1}");
         assertEcho(result, "01-\\${1+1}");

@@ -55,7 +55,7 @@ Use cases:
  - servlet1 does a startAsync()
  - servlet1 dispatches to dispatch(/servlet2)
  - the container calls complete() after servlet2 is complete
- - TODO
+ - TOMCATTODO
 
 6. Chained dispatch
  - servlet1 does a startAsync

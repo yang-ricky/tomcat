@@ -690,7 +690,7 @@
     <!-- Remove Digester Support -->
     <exclude name="org/apache/tomcat/util/digester/**"/>
 
-    <!-- TODO - For now, remove SSL until we have an example -->
+    <!-- TOMCATTODO - For now, remove SSL until we have an example -->
     <exclude name="org/apache/tomcat/util/net/jsse/**"/>
     <exclude name="org/apache/tomcat/util/net/openssl/**"/>
 

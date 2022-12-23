@@ -115,7 +115,7 @@ public class TestClose extends WebSocketBaseTest {
 
     @Test
     public void testTcpClose() throws Exception {
-        // TODO
+        // TOMCATTODO
         Assume.assumeFalse("This test currently fails for APR",
                 getTomcatInstance().getConnector().getProtocolHandlerClassName().contains("Apr"));
 
@@ -178,7 +178,7 @@ public class TestClose extends WebSocketBaseTest {
 
     @Test
     public void testTcpCloseInOnMessage() throws Exception {
-        // TODO
+        // TOMCATTODO
         Assume.assumeFalse("This test currently fails for APR",
                 getTomcatInstance().getConnector().getProtocolHandlerClassName().contains("Apr"));
 

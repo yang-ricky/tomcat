@@ -82,6 +82,6 @@ public class TestHttp2Section_6_8 extends Http2TestBase {
     }
 
 
-    // TODO Test header processing and window size processing for ignored
+    // TOMCATTODO Test header processing and window size processing for ignored
     //      streams
 }

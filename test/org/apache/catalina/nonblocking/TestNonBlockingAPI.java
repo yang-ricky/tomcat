@@ -422,7 +422,7 @@ public class TestNonBlockingAPI extends TomcatBaseTest {
         Assert.assertTrue("Error listener should have been invoked.", servlet.wlistener.onErrorInvoked);
         Assert.assertTrue("Async context should have been completed.", asyncContextIsComplete.get());
 
-        // TODO Figure out why non-blocking writes with the NIO connector appear
+        // TOMCATTODO Figure out why non-blocking writes with the NIO connector appear
         // to be slower on Linux
         alv.validateAccessLog(1, 500, WRITE_PAUSE_MS,
                 WRITE_PAUSE_MS + 30 * 1000);

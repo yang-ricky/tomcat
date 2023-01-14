@@ -25,6 +25,7 @@ import org.apache.tomcat.jni.Error;
 import org.apache.tomcat.util.ExceptionUtils;
 import org.apache.tomcat.util.res.StringManager;
 
+//INFO:h2-Connector当中的第一步
 public class Acceptor<U> implements Runnable {
 
     private static final Log log = LogFactory.getLog(Acceptor.class);

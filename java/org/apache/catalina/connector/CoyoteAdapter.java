@@ -61,7 +61,7 @@ import org.apache.tomcat.util.res.StringManager;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
-//INFO: 将Tomcat Request转成ServletRequest，再调用容器的service方法？
+//INFO:h? 将Tomcat Request转成ServletRequest，再调用容器的service方法？
 public class CoyoteAdapter implements Adapter {
 
     private static final Log log = LogFactory.getLog(CoyoteAdapter.class);
@@ -307,10 +307,12 @@ public class CoyoteAdapter implements Adapter {
     }
 
 
+    //Connector会调用这个方法
     @Override
     public void service(org.apache.coyote.Request req, org.apache.coyote.Response res)
             throws Exception {
 
+        // 这里的Request就是Servlet的Request
         Request request = (Request) req.getNote(ADAPTER_NOTES);
         Response response = (Response) res.getNote(ADAPTER_NOTES);
 
@@ -351,6 +353,7 @@ public class CoyoteAdapter implements Adapter {
                 request.setAsyncSupported(
                         connector.getService().getContainer().getPipeline().isAsyncSupported());
                 // Calling the container
+                // 调用容器的Service方法
                 connector.getService().getContainer().getPipeline().getFirst().invoke(
                         request, response);
             }

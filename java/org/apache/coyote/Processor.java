@@ -27,6 +27,7 @@ import org.apache.tomcat.util.net.SocketWrapperBase;
 /**
  * Common interface for processors of all protocols.
  */
+//INFO:h2-Connector当中的第二步
 public interface Processor {
 
     /**

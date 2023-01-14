@@ -26,7 +26,10 @@ import org.apache.tomcat.util.net.SocketEvent;
  * @see ProtocolHandler
  */
 //INFO: 用来转换成标准的ServletRequest接口
+//INFO:h2-Connector当中的第三步
 public interface Adapter {
+    //问题: Adapter 不是将Tomcat Request转成标准的ServletRequest吗？
+    //怎么这里没看到ServletRequest的类呢?
 
     /**
      * Call the service method, and notify all listeners
@@ -46,6 +49,7 @@ public interface Adapter {
      *  Tomcat should be able to handle and log any other exception ( including
      *  runtime exceptions )
      */
+    //方法正常是动词+名词, 但这个纯粹的是名词，是不是值得改进一下？
     public void service(Request req, Response res) throws Exception;
 
     /**
@@ -62,6 +66,7 @@ public interface Adapter {
      *
      * @throws Exception If the processing fails unexpectedly
      */
+    //这个命名前面不加Is,让我感觉好奇怪
     public boolean prepare(Request req, Response res) throws Exception;
 
     public boolean asyncDispatch(Request req,Response res, SocketEvent status)

@@ -33,7 +33,7 @@ import org.apache.tomcat.util.net.SSLHostConfig;
  * @author Costin Manolache
  * @see Adapter
  */
-//INFO: 这个接口ProtocolHandler的意义和价值?
+//INFO: 这个名词强调的是协议的处理，而不是I/O的处理， 在Connector里的定位是什么?
 public interface ProtocolHandler {
 
     /**

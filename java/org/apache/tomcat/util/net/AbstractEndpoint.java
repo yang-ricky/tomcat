@@ -63,7 +63,7 @@ import org.apache.tomcat.util.threads.ThreadPoolExecutor;
  * @author Mladen Turk
  * @author Remy Maucherat
  */
-// INFO: AbstractEndpoint和接口Endpoint的关系是什么?
+//INFO:h? - 没有Endpoint接口，只有AbstractEndpoint这个抽象类, 引用了Acceptor
 public abstract class AbstractEndpoint<S,U> {
 
     // -------------------------------------------------------------- Constants
